@@ -1,0 +1,31 @@
+
+<br>
+<br>
+<br>
+
+<h1>Projecttask</h1>
+<table class="table">
+<p><a href="/projecttask/create">Create</a></p>
+<tr>
+  <td>task_id</td>
+  <td>assigned_to</td>
+  <td>start_date</td>
+  <td>end_date</td>
+  <td>completion_date</td>
+  <td>userstoryid</td>
+ <td></td>
+</tr>
+<tr *ngFor="let tsk of projecttask">
+  <td>{{tsk.task_id}}</td>
+  <td>{{tsk.assigned_to}}</td>
+  <td>{{tsk.start_date}}</td>
+  <td>{{tsk.end_date}}</td>
+  <td>{{tsk.completion_date}}</td>
+  <td>{{tsk.userstoryid}}</td>
+  <td>
+    <a href='/projecttask/edit/{{tsk.task_id}}'>Edit/</a>
+    <a href='/projecttask/delete/{{tsk.task_id}}'>Delete</a>
+  </td>
+ </tr>
+</table>
+

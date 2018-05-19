@@ -1,0 +1,50 @@
+<h1>Delete</h1>
+
+<form [formGroup]="FormData" (ngSubmit)="onClickSubmit()">
+    <div class="form-horizontal">
+        <h4>Projecttask</h4>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Assigned To</label>
+            <div class="col-md-10">
+                <label class="control-label col-md-2">{{task.assigned_to}}</label>   
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Start Date</label>
+            <div class="col-md-10">
+
+                <label class="control-label col-md-2">{{task.start_date}}</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">End Date</label>
+            <div class="col-md-10">
+                <label class="control-label col-md-2">{{task.end_date}}</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Completion Date</label>
+            <div class="col-md-10">
+                <label class="control-label col-md-2">{{task.completion_date}}</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label col-md-2">UserstoryID</label>
+          <div class="col-md-10">
+              <label class="control-label col-md-2">{{task.userstoryid}}</label>
+          </div>
+      </div>        
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Delete" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+

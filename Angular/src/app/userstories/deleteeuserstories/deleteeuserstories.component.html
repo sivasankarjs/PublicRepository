@@ -1,0 +1,29 @@
+<h1>Delete</h1>
+
+<form  (ngSubmit)="onClickSubmit()">
+    <div class="form-horizontal">
+        <h4>Userstories</h4>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">story</label>
+            <div class="col-md-10">
+                <label class="control-label col-md-2">{{user.story}}</label>   
+            </div>
+        </div>                          
+
+        <div class="form-group">
+            <label class="control-label col-md-2">proid</label>
+            <div class="col-md-10">
+
+                <label class="control-label col-md-2">{{user.proid}}</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Delete" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+

@@ -1,0 +1,25 @@
+
+<br>
+<br>
+<br>
+
+<h1>ManagerComments</h1>
+<table class="table">
+<p><a href="/managercomments/create">Create</a></p>
+<tr>
+  <td>managerid</td>
+  <td>comments</td>
+  <td>taskid</td>
+  
+ <td></td>
+</tr>
+<tr *ngFor="let mgr of managercomments">
+  <td>{{mgr.managerid}}</td>
+  <td>{{mgr.comments}}</td>
+  <td>{{mgr.taskid}}</td>
+  <td>
+    <a href='/managercomments/edit/{{mgr.managerid}}'>Edit/</a>
+    <a href='/managercomments/delete/{{mgr.managerid}}'>Delete</a>
+  </td>
+ </tr>
+</table>

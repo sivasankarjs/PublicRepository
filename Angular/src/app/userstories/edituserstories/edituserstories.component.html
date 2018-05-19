@@ -1,0 +1,31 @@
+<h1>Edit</h1>
+
+<form [formGroup]="FormData" (ngSubmit)="onClickSubmit(FormData.value)">
+    <div class="form-horizontal">
+        <h4>Userstories</h4>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Story</label>
+            <div class="col-md-10">
+                <input type="text" formControlName="story" class="control-label col-md-2">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Pro ID</label>
+            <div class="col-md-10">
+
+                <input type="text" formControlName="proid" class="control-label col-md-2">
+            </div>
+        </div>
+
+       
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Edit" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
